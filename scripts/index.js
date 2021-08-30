@@ -7,10 +7,6 @@ const showMobileMenu = () => {
   navbar.classList.toggle('open');
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.owl-carousel' ).owlCarousel();
-} );
-
 $(document).ready(function(){
   $("#services .owl-carousel").owlCarousel({
     dots: false,
