@@ -4,9 +4,12 @@
   width: 100%;
 }
 
-section,
 .padding-screen {
   padding: 0 6vw;
+}
+
+section#services, section#testimonials {
+  padding: 64px 0; 
 }
 
 header {
@@ -413,9 +416,12 @@ menu.menu-btn {
 @media handheld and (max-width: 768px),
   screen and (max-device-width: 768px),
   screen and (max-width: 768px) {
-  section,
   .padding-screen {
     padding: 24px 12px;
+  }
+    
+  section#services, section#testimonials {
+    padding: 24px 0;
   }
 
   menu.menu-btn {
