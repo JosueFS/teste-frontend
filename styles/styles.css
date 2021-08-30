@@ -8,7 +8,9 @@
   padding: 0 6vw;
 }
 
-section#services, section#testimonials {
+section#services,
+section#advantages,
+section#testimonials {
   padding: 64px 0; 
 }
 
@@ -420,7 +422,9 @@ menu.menu-btn {
     padding: 24px 12px;
   }
     
-  section#services, section#testimonials {
+  section#services,
+  section#advantages,
+  section#testimonials {
     padding: 24px 0;
   }
 
@@ -547,11 +551,6 @@ menu.menu-btn {
 
   .advantage-card .section-title h5 {
     font-size: 2rem;
-  }
-
-  section#services,
-  section#testimonials {
-    padding: 0;
   }
 
   footer {
