@@ -14,15 +14,16 @@ $(document).ready(function(){
     margin: 16,
     stagePadding: 8,
     responsiveClass: true,
+    responsiveBaseElement: "#services .owl-carousel",
     responsive: {
         0: {
           items: 1.3,
           center: true,
         },
-        768: {
+        600: {
           items: 2,
         },
-        960: {
+        800: {
           items: 3,
         }
     }
@@ -37,16 +38,17 @@ $(document).ready(function(){
     stagePadding: 8,
     loop: true,
     responsiveClass: true,
+    responsiveBaseElement: "#testimonials .owl-carousel",
     responsive: {
         0: {
           items: 1.2,
           center: true
         },
-        768: {
+        640: {
           items: 2,
-          nav: true,
+          nav: true
         },
-        960: {
+        800: {
           items: 3,
           nav: true
         }

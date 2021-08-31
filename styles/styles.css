@@ -2,6 +2,10 @@
   color: var(--text-primary);
   overflow-y: hidden;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .padding-screen {
@@ -11,15 +15,17 @@
 section#services,
 section#advantages,
 section#testimonials {
-  padding: 64px 0; 
+  padding: 64px 0;
+  width: 100%;
+  max-width: 800px;
 }
 
 header {
   background-color: #fff;
-  height: 64px;
-  left: 0;
   position: fixed;
+  height: 64px;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 999;
 }
@@ -102,18 +108,18 @@ a.nav-link:hover {
 }
 
 section#banner {
-  align-items: center;
-  background-color: var(--background-color);
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  margin-top: 6.4rem;
-  padding-right: 0;
   position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6.4rem;
+  background-color: var(--background-color);
 }
 
 div.banner-text {
-  width: 30%;
+  max-width: 50%;
+  margin-top: 64px;
 }
 
 div.banner-text h3 {
@@ -283,6 +289,10 @@ section#services {
   background-color: var(--primary-color);
 }
 
+/* .section-container-items {
+  max-width: 800px;
+} */
+
 #advantages .section-container-items {
   align-items: center;
   display: flex;
@@ -359,13 +369,15 @@ section#services {
 }
 
 footer {
-  align-items: center;
-  background-color: var(--primary-color);
-  display: flex;
-  height: 400px;
-  justify-content: space-around;
-  margin-top: 100px;
   position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-self: flex-start;
 }
 
 footer img.mobile-device {
@@ -421,7 +433,7 @@ menu.menu-btn {
   .padding-screen {
     padding: 24px 12px;
   }
-    
+
   section#services,
   section#advantages,
   section#testimonials {
@@ -502,7 +514,7 @@ menu.menu-btn {
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     z-index: 1;
   }
 
